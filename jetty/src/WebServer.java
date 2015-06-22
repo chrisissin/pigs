@@ -1,0 +1,183 @@
+import java.io.BufferedInputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.PriorityQueue;
+import java.util.Queue;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpServletRequest;
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.UnsupportedAudioFileException;
+
+import org.eclipse.jetty.server.Handler;
+import org.eclipse.jetty.server.Server;
+import org.eclipse.jetty.server.handler.ContextHandlerCollection;
+import org.eclipse.jetty.servlet.ServletContextHandler;
+import org.eclipse.jetty.servlet.ServletHolder;
+import org.eclipse.jetty.webapp.WebAppContext;
+
+import com.oreilly.servlet.MultipartRequest;
+
+public class WebServer
+{
+	
+	public static void main( String args[] ) throws Exception
+	{
+		Server server = new Server( 8080 );
+		
+	//	Context root = new Context( server, "/", Context.SESSIONS );
+		
+		WebAppContext webapp = new WebAppContext();
+        webapp.setContextPath( "/www" );
+        webapp.setResourceBase( "web" );
+        
+        ServletContextHandler context0 = new ServletContextHandler(ServletContextHandler.SESSIONS);
+        context0.setContextPath("/api");
+        
+        context0.addServlet( new ServletHolder( new HelloServlet() ), "/audio" );
+        context0.addServlet( new ServletHolder( new PigAction() ), "/pig" );
+        
+        ContextHandlerCollection contexts = new ContextHandlerCollection();
+        contexts.setHandlers(new Handler[] { context0, webapp });
+        
+        server.setHandler( contexts );
+		
+		server.start();
+	}
+
+}
+
+class PigAction extends HttpServlet {
+
+	private static final long serialVersionUID = -444303659399506881L;
+	
+	@Override
+	public void init() throws ServletException
+	{
+		super.init();
+		
+		this.getServletContext().setAttribute( "pigs", new PriorityQueue<Integer>() );
+	}
+
+	@Override
+	public void doGet( HttpServletRequest request, HttpServletResponse response ) throws ServletException, IOException
+	{
+		String action = request.getParameter( "action" );
+		
+		if( "arrival".equals( action ) ) {
+			
+			int result = -1;
+			
+			synchronized( getServletContext() ) {
+				@SuppressWarnings( "unchecked" )
+				Queue<Integer> queue = (PriorityQueue<Integer>) getServletContext().getAttribute( "pigs" );
+				if( queue.size() > 0 ) {
+					result = queue.poll();
+					getServletContext().setAttribute( "pigs", queue );
+				}
+			}
+			
+			response.getWriter().print( result );
+		}
+		
+		if( "departure".equals( action ) ) {
+			
+			String y = request.getParameter( "y" );
+			
+			boolean result;
+			
+			synchronized( getServletContext() ) {				
+				@SuppressWarnings( "unchecked" )
+				Queue<Integer> queue = (PriorityQueue<Integer>) getServletContext().getAttribute( "pigs" );
+				
+				result = queue.add( Integer.valueOf( y ) );
+				
+				getServletContext().setAttribute( "pigs", queue );
+			}
+			
+			response.getWriter().print( result );
+		}
+	}
+	
+}
+
+class HelloServlet extends HttpServlet {
+
+	private static final long serialVersionUID = -2396391783958286261L;
+
+	@Override
+	public void init() throws ServletException
+	{
+		super.init();
+		
+		File out_dir = new File( "out" );
+		
+		if( !out_dir.exists() ) {
+			out_dir.mkdir();
+		}
+	}
+	
+	@Override
+	public void doPost( HttpServletRequest request, HttpServletResponse response ) throws ServletException, IOException
+	{
+		byte[] bytes = null;
+		
+		try {
+			MultipartRequest multipart_request = new MultipartRequest( request, "out" );
+
+			
+			AudioInputStream audioInputStream = AudioSystem.getAudioInputStream( new BufferedInputStream( new FileInputStream( multipart_request.getFile( "audio" ) ) ) );
+			
+			bytes = new byte[(int) (audioInputStream.getFrameLength()) * (audioInputStream.getFormat().getFrameSize())];
+			
+			audioInputStream.read( bytes );
+		} catch ( UnsupportedAudioFileException e ) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		// Get amplitude values for each audio channel in an array.
+		int[][] graphData = getUnscaledAmplitude( bytes, 1 );
+
+		for( int i: graphData[0] ) {
+			int v = Math.abs( i ) * Math.abs( i );
+
+			System.out.println( v );
+		}
+
+		response.setContentType( "text/html" );
+		response.setStatus( HttpServletResponse.SC_OK );
+		response.getWriter().println( "<h1>Hello</h1>" );
+	}
+	
+	
+	public static int[][] getUnscaledAmplitude(byte[] eightBitByteArray, int nbChannels)
+	{
+	    int[][] toReturn = new int[nbChannels][eightBitByteArray.length / (2 * nbChannels)];
+	    int index = 0;
+
+	    for (int audioByte = 0; audioByte < eightBitByteArray.length;)
+	    {
+	        for (int channel = 0; channel < nbChannels; channel++)
+	        {
+	            // Do the byte to sample conversion.
+	            int low = (int) eightBitByteArray[audioByte];
+	            audioByte++;
+	            int high = (int) eightBitByteArray[audioByte];
+	            audioByte++;
+	            int sample = (high << 8) + (low & 0x00ff);
+
+	            toReturn[channel][index] = sample;
+	        }
+	        index++;
+	    }
+
+	    return toReturn;
+	}
+
+
+}

@@ -1,0 +1,868 @@
+10
+
+dir
+0
+svn+ssh://svn.corp.yahoo.com/yahoo/tw/hackday/branches/2012S/pigs/ios/VoiceChangingBowtie/libs/cocos2d
+svn+ssh://svn.corp.yahoo.com/yahoo/tw/hackday
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3aee91b1-43b4-43da-995c-434b0511e08a
+
+CCActionInstant.m
+file
+
+
+
+add
+
+CCParticleSystemQuad.h
+file
+
+
+
+add
+
+CCLabelBMFont.h
+file
+
+
+
+add
+
+CCGrid.h
+file
+
+
+
+add
+
+CCTextureAtlas.h
+file
+
+
+
+add
+
+cocos2d.h
+file
+
+
+
+add
+
+CCParticleSystemPoint.m
+file
+
+
+
+add
+
+CCCamera.h
+file
+
+
+
+add
+
+CCParticleSystemQuad.m
+file
+
+
+
+add
+
+CCTMXTiledMap.h
+file
+
+
+
+add
+
+CCLabelBMFont.m
+file
+
+
+
+add
+
+CCGrid.m
+file
+
+
+
+add
+
+CCTextureAtlas.m
+file
+
+
+
+add
+
+CCTransition.h
+file
+
+
+
+add
+
+cocos2d.m
+file
+
+
+
+add
+
+CCLabelTTF.h
+file
+
+
+
+add
+
+CCCamera.m
+file
+
+
+
+add
+
+CCScene.h
+file
+
+
+
+add
+
+CCTMXTiledMap.m
+file
+
+
+
+add
+
+CCTransition.m
+file
+
+
+
+add
+
+CCLabelTTF.m
+file
+
+
+
+add
+
+CCScene.m
+file
+
+
+
+add
+
+CCAnimationCache.h
+file
+
+
+
+add
+
+ccTypes.h
+file
+
+
+
+add
+
+ccConfig.h
+file
+
+
+
+add
+
+CCActionTiledGrid.h
+file
+
+
+
+add
+
+CCTMXXMLParser.h
+file
+
+
+
+add
+
+CCDrawingPrimitives.h
+file
+
+
+
+add
+
+CCAnimationCache.m
+file
+
+
+
+add
+
+CCActionTiledGrid.m
+file
+
+
+
+add
+
+CCTMXXMLParser.m
+file
+
+
+
+add
+
+CCDrawingPrimitives.m
+file
+
+
+
+add
+
+CCTMXObjectGroup.h
+file
+
+
+
+add
+
+CCScheduler.h
+file
+
+
+
+add
+
+CCSpriteBatchNode.h
+file
+
+
+
+add
+
+CCActionTween.h
+file
+
+
+
+add
+
+CCTileMapAtlas.h
+file
+
+
+
+add
+
+CCTMXObjectGroup.m
+file
+
+
+
+add
+
+CCActionInterval.h
+file
+
+
+
+add
+
+CCActionGrid.h
+file
+
+
+
+add
+
+CCScheduler.m
+file
+
+
+
+add
+
+CCSpriteBatchNode.m
+file
+
+
+
+add
+
+CCTextureCache.h
+file
+
+
+
+add
+
+CCActionTween.m
+file
+
+
+
+add
+
+CCTileMapAtlas.m
+file
+
+
+
+add
+
+CCActionCamera.h
+file
+
+
+
+add
+
+CCActionInterval.m
+file
+
+
+
+add
+
+CCActionGrid.m
+file
+
+
+
+add
+
+CCTexturePVR.h
+file
+
+
+
+add
+
+CCTextureCache.m
+file
+
+
+
+add
+
+CCActionCamera.m
+file
+
+
+
+add
+
+CCTexturePVR.m
+file
+
+
+
+add
+
+CCParticleExamples.h
+file
+
+
+
+add
+
+CCSpriteFrameCache.h
+file
+
+
+
+add
+
+CCTMXLayer.h
+file
+
+
+
+add
+
+CCParticleExamples.m
+file
+
+
+
+add
+
+CCActionGrid3D.h
+file
+
+
+
+add
+
+CCActionPageTurn3D.h
+file
+
+
+
+add
+
+CCSpriteFrameCache.m
+file
+
+
+
+add
+
+CCTMXLayer.m
+file
+
+
+
+add
+
+Platforms
+dir
+
+
+
+add
+
+CCActionGrid3D.m
+file
+
+
+
+add
+
+CCActionPageTurn3D.m
+file
+
+
+
+add
+
+CCSpriteFrame.h
+file
+
+
+
+add
+
+CCMenuItem.h
+file
+
+
+
+add
+
+ccMacros.h
+file
+
+
+
+add
+
+CCNode.h
+file
+
+
+
+add
+
+CCSpriteFrame.m
+file
+
+
+
+add
+
+CCTexture2D.h
+file
+
+
+
+add
+
+CCBlockSupport.h
+file
+
+
+
+add
+
+CCMenuItem.m
+file
+
+
+
+add
+
+CCNode.m
+file
+
+
+
+add
+
+CCTexture2D.m
+file
+
+
+
+add
+
+CCBlockSupport.m
+file
+
+
+
+add
+
+CCRenderTexture.h
+file
+
+
+
+add
+
+CCTransitionPageTurn.h
+file
+
+
+
+add
+
+CCActionProgressTimer.h
+file
+
+
+
+add
+
+CCGrabber.h
+file
+
+
+
+add
+
+CCRenderTexture.m
+file
+
+
+
+add
+
+CCTransitionPageTurn.m
+file
+
+
+
+add
+
+CCSprite.h
+file
+
+
+
+add
+
+CCActionProgressTimer.m
+file
+
+
+
+add
+
+CCGrabber.m
+file
+
+
+
+add
+
+CCParallaxNode.h
+file
+
+
+
+add
+
+CCAtlasNode.h
+file
+
+
+
+add
+
+CCActionEase.h
+file
+
+
+
+add
+
+CCSprite.m
+file
+
+
+
+add
+
+CCAction.h
+file
+
+
+
+add
+
+CCMotionStreak.h
+file
+
+
+
+add
+
+CCAnimation.h
+file
+
+
+
+add
+
+CCAtlasNode.m
+file
+
+
+
+add
+
+CCParallaxNode.m
+file
+
+
+
+add
+
+CCActionEase.m
+file
+
+
+
+add
+
+Support
+dir
+
+
+
+add
+
+CCAction.m
+file
+
+
+
+add
+
+CCMotionStreak.m
+file
+
+
+
+add
+
+CCAnimation.m
+file
+
+
+
+add
+
+CCProtocols.h
+file
+
+
+
+add
+
+CCMenu.h
+file
+
+
+
+add
+
+CCLabelAtlas.h
+file
+
+
+
+add
+
+CCProgressTimer.h
+file
+
+
+
+add
+
+CCConfiguration.h
+file
+
+
+
+add
+
+CCTransitionRadial.h
+file
+
+
+
+add
+
+CCActionManager.h
+file
+
+
+
+add
+
+CCParticleSystem.h
+file
+
+
+
+add
+
+CCMenu.m
+file
+
+
+
+add
+
+CCLabelAtlas.m
+file
+
+
+
+add
+
+CCProgressTimer.m
+file
+
+
+
+add
+
+CCDirector.h
+file
+
+
+
+add
+
+CCRibbon.h
+file
+
+
+
+add
+
+CCLayer.h
+file
+
+
+
+add
+
+CCConfiguration.m
+file
+
+
+
+add
+
+CCTransitionRadial.m
+file
+
+
+
+add
+
+CCActionManager.m
+file
+
+
+
+add
+
+CCParticleSystem.m
+file
+
+
+
+add
+
+CCActionInstant.h
+file
+
+
+
+add
+
+CCDirector.m
+file
+
+
+
+add
+
+CCRibbon.m
+file
+
+
+
+add
+
+CCLayer.m
+file
+
+
+
+add
+
+CCParticleSystemPoint.h
+file
+
+
+
+add
+

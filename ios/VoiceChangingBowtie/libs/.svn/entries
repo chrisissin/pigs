@@ -1,0 +1,98 @@
+10
+
+dir
+0
+svn+ssh://svn.corp.yahoo.com/yahoo/tw/hackday/branches/2012S/pigs/ios/VoiceChangingBowtie/libs
+svn+ssh://svn.corp.yahoo.com/yahoo/tw/hackday
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3aee91b1-43b4-43da-995c-434b0511e08a
+
+Dirac
+dir
+
+
+
+add
+
+cocoslive
+dir
+
+
+
+add
+
+FontLabel
+dir
+
+
+
+add
+
+LICENSE_FontLabel.txt
+file
+
+
+
+add
+
+cocos2d
+dir
+
+
+
+add
+
+LICENSE_cocos2d.txt
+file
+
+
+
+add
+
+LICENSE_TouchJSON.txt
+file
+
+
+
+add
+
+TouchJSON
+dir
+
+
+
+add
+
+CocosDenshion
+dir
+
+
+
+add
+
+LICENSE_CocosDenshion.txt
+file
+
+
+
+add
+

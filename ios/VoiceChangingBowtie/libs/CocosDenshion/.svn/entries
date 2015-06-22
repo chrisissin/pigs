@@ -1,0 +1,91 @@
+10
+
+dir
+0
+svn+ssh://svn.corp.yahoo.com/yahoo/tw/hackday/branches/2012S/pigs/ios/VoiceChangingBowtie/libs/CocosDenshion
+svn+ssh://svn.corp.yahoo.com/yahoo/tw/hackday
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3aee91b1-43b4-43da-995c-434b0511e08a
+
+CDConfig.h
+file
+
+
+
+add
+
+CocosDenshion.h
+file
+
+
+
+add
+
+SimpleAudioEngine.h
+file
+
+
+
+add
+
+CDOpenALSupport.h
+file
+
+
+
+add
+
+CDAudioManager.h
+file
+
+
+
+add
+
+CocosDenshion.m
+file
+
+
+
+add
+
+SimpleAudioEngine.m
+file
+
+
+
+add
+
+CDOpenALSupport.m
+file
+
+
+
+add
+
+CDAudioManager.m
+file
+
+
+
+add
+

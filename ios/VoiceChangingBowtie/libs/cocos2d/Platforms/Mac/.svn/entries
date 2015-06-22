@@ -1,0 +1,84 @@
+10
+
+dir
+0
+svn+ssh://svn.corp.yahoo.com/yahoo/tw/hackday/branches/2012S/pigs/ios/VoiceChangingBowtie/libs/cocos2d/Platforms/Mac
+svn+ssh://svn.corp.yahoo.com/yahoo/tw/hackday
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3aee91b1-43b4-43da-995c-434b0511e08a
+
+MacWindow.m
+file
+
+
+
+add
+
+CCEventDispatcher.h
+file
+
+
+
+add
+
+MacGLView.h
+file
+
+
+
+add
+
+CCDirectorMac.h
+file
+
+
+
+add
+
+CCEventDispatcher.m
+file
+
+
+
+add
+
+MacGLView.m
+file
+
+
+
+add
+
+CCDirectorMac.m
+file
+
+
+
+add
+
+MacWindow.h
+file
+
+
+
+add
+

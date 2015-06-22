@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/httpclient/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="lib/httpclient/httpclient-4.2.jar"/>
+	<classpathentry kind="lib" path="lib/httpclient/httpcore-4.2.jar"/>
+	<classpathentry kind="lib" path="lib/jetty7/jetty-ajp-7.6.3.v20120416.jar"/>
+	<classpathentry kind="lib" path="lib/jetty7/jetty-annotations-7.6.3.v20120416.jar"/>
+	<classpathentry kind="lib" path="lib/jetty7/jetty-client-7.6.3.v20120416.jar"/>
+	<classpathentry kind="lib" path="lib/jetty7/jetty-continuation-7.6.3.v20120416.jar"/>
+	<classpathentry kind="lib" path="lib/jetty7/jetty-deploy-7.6.3.v20120416.jar"/>
+	<classpathentry kind="lib" path="lib/jetty7/jetty-http-7.6.3.v20120416.jar"/>
+	<classpathentry kind="lib" path="lib/jetty7/jetty-io-7.6.3.v20120416.jar"/>
+	<classpathentry kind="lib" path="lib/jetty7/jetty-jmx-7.6.3.v20120416.jar"/>
+	<classpathentry kind="lib" path="lib/jetty7/jetty-jndi-7.6.3.v20120416.jar"/>
+	<classpathentry kind="lib" path="lib/jetty7/jetty-overlay-deployer-7.6.3.v20120416.jar"/>
+	<classpathentry kind="lib" path="lib/jetty7/jetty-plus-7.6.3.v20120416.jar"/>
+	<classpathentry kind="lib" path="lib/jetty7/jetty-policy-7.6.3.v20120416.jar"/>
+	<classpathentry kind="lib" path="lib/jetty7/jetty-rewrite-7.6.3.v20120416.jar"/>
+	<classpathentry kind="lib" path="lib/jetty7/jetty-security-7.6.3.v20120416.jar"/>
+	<classpathentry kind="lib" path="lib/jetty7/jetty-server-7.6.3.v20120416.jar"/>
+	<classpathentry kind="lib" path="lib/jetty7/jetty-servlet-7.6.3.v20120416.jar"/>
+	<classpathentry kind="lib" path="lib/jetty7/jetty-servlets-7.6.3.v20120416.jar"/>
+	<classpathentry kind="lib" path="lib/jetty7/jetty-util-7.6.3.v20120416.jar"/>
+	<classpathentry kind="lib" path="lib/jetty7/jetty-webapp-7.6.3.v20120416.jar"/>
+	<classpathentry kind="lib" path="lib/jetty7/jetty-websocket-7.6.3.v20120416.jar"/>
+	<classpathentry kind="lib" path="lib/jetty7/jetty-xml-7.6.3.v20120416.jar"/>
+	<classpathentry kind="lib" path="lib/jetty7/servlet-api-2.5.jar"/>
+	<classpathentry kind="lib" path="lib/httpclient/httpmime-4.2.jar"/>
+	<classpathentry kind="lib" path="lib/cos.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

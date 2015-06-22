@@ -1,0 +1,126 @@
+10
+
+dir
+0
+svn+ssh://svn.corp.yahoo.com/yahoo/tw/hackday/branches/2012S/pigs/ios/VoiceChangingBowtie/libs/cocos2d/Platforms/iOS
+svn+ssh://svn.corp.yahoo.com/yahoo/tw/hackday
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3aee91b1-43b4-43da-995c-434b0511e08a
+
+CCTouchHandler.m
+file
+
+
+
+add
+
+CCDirectorIOS.h
+file
+
+
+
+add
+
+ESRenderer.h
+file
+
+
+
+add
+
+CCTouchDispatcher.h
+file
+
+
+
+add
+
+ES1Renderer.h
+file
+
+
+
+add
+
+CCDirectorIOS.m
+file
+
+
+
+add
+
+glu.c
+file
+
+
+
+add
+
+EAGLView.h
+file
+
+
+
+add
+
+CCTouchDispatcher.m
+file
+
+
+
+add
+
+ES1Renderer.m
+file
+
+
+
+add
+
+CCTouchDelegateProtocol.h
+file
+
+
+
+add
+
+CCTouchHandler.h
+file
+
+
+
+add
+
+glu.h
+file
+
+
+
+add
+
+EAGLView.m
+file
+
+
+
+add
+
